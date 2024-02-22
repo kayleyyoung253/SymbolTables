@@ -7,8 +7,10 @@ public class Main {
         // see p. 370 for basic symbol-table test client
         // this is Ken's rewrite in an attempt to add clarity
 
-        SymbolTable<String, Integer> table = new SequentialSearchST<>();
-
+        //SymbolTable<String, Integer> table = new SequentialSearchST<>();
+        //SymbolTable<String, Integer> table = new BinarySearchST<>(100);
+        //SymbolTable<String, Integer> table = new BST<>();
+        SymbolTable<String, Integer> table = new SeparateChainingHashST<>();
         // hard coding input so that we don't need to type it
         // in the console each time, for convenience
         Scanner in = new Scanner("S E A R C H E X A M P L E");
